@@ -1,0 +1,23 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  step0:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install Postgres 16
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y postgresql-16
+      - name: Start throwaway Postgres 16
+        run: |
+          sudo install -d -o postgres -g postgres /tmp/ledgerline-pg
+          sudo -u postgres /usr/lib/postgresql/16/bin/initdb -D /tmp/ledgerline-pg -A trust
+          sudo -u postgres /usr/lib/postgresql/16/bin/pg_ctl -D /tmp/ledgerline-pg -l /tmp/ledgerline-pg.log -o '-h 127.0.0.1 -p 5499' -w start
+      - run: npm ci && npm test
+        env:
+          TEST_DATABASE_URL: postgres://postgres@127.0.0.1:5499/postgres

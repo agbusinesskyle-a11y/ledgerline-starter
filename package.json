@@ -1,0 +1,23 @@
+{
+  "name": "ledgerline-starter",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "setup": "node scripts/setup.js",
+    "local": "node scripts/local.js",
+    "migrate": "node services/migrate/index.js",
+    "test": "node --test --test-concurrency=1 test/*.test.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "3.1149.0",
+    "age-encryption": "0.3.1",
+    "bcryptjs": "3.0.3",
+    "otpauth": "9.5.2",
+    "pg": "8.23.1"
+  }
+}

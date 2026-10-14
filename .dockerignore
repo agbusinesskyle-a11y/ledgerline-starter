@@ -1,0 +1,15 @@
+.git
+.aws
+node_modules
+.env*
+docs
+!docs/rulings
+test
+.scratch
+*.dump
+*.age
+*.key
+npm-debug.log*
+.secrets*
+exports
+dumps

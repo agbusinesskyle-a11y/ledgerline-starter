@@ -1,0 +1,21 @@
+                                     Example Co, LLC
+                            BANK-1234, Period Ending 07/31/2026
+                                  RECONCILIATION REPORT
+                                Reconciled on: 10/09/2026
+                           Reconciled by: someone@example.com
+Summary                                                                     USD
+Statement beginning balance                                                600.00
+Checks and payments cleared (2)                                           -400.00
+Deposits and other credits cleared (2)                                   2,050.00
+Statement ending balance                                                 2,250.00
+Details
+Checks and payments cleared (2)
+DATE        TYPE        REF NO.        PAYEE             AMOUNT (USD)
+07/01/2026  Expense     17             Synthetic shop         -100.00
+07/10/2026  Expense                                          -300.00
+Total                                                        -400.00
+Deposits and other credits cleared (2)
+DATE        TYPE        REF NO.        PAYEE             AMOUNT (USD)
+07/02/2026  Deposit                                         1,850.00
+07/20/2026  Deposit                                           200.00
+Total                                                       2,050.00

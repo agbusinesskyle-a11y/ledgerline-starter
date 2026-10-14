@@ -1,0 +1,21 @@
+{
+  "ruled_by": "Your Name",
+  "ruled_at": "2026-01-01",
+  "source": "EXAMPLE ONLY - copy this file, then replace every name, institution and mask with your own",
+  "entities": [
+    { "slug": "example_company", "display_name": "Example Company LLC" },
+    { "slug": "example_farm", "display_name": "Example Farm LLC" },
+    { "slug": "personal", "display_name": "Personal" }
+  ],
+  "dimensions": [
+    { "slug": "example_division", "display_name": "Example Division", "parent_entity": "example_company" }
+  ],
+  "accounts": [
+    { "institution": "First Platypus Bank", "mask": "0000", "name": "Example Company operating checking", "entity": "example_company", "dimension": "example_division" },
+    { "institution": "First Platypus Bank", "mask": "1111", "name": "Example Company savings", "entity": "example_company" },
+    { "institution": "Houndstooth Bank", "mask": "2222", "name": "Example Farm checking", "entity": "example_farm" },
+    { "institution": "Houndstooth Bank", "mask": "3333", "name": "Example Farm line of credit", "entity": "example_farm", "note": "LINE OF CREDIT" },
+    { "institution": "Tartan Bank", "mask": "4444", "name": "Personal credit card", "entity": "personal" }
+  ],
+  "reporting_scope": "Every account listed here is in scope. institution + mask must match exactly what Plaid reports (see serve.v_account_coverage / core.source_account after your first sync)."
+}

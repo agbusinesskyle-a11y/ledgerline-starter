@@ -1,0 +1,24 @@
+# dependencies
+node_modules/
+
+# secrets and local settings (never commit these)
+.env
+.env.*
+!.env.example
+.secrets*/
+*.key
+*.age
+
+# database dumps, exports and real bank data
+*.dump
+*.sql.gz
+*.backup
+dumps/
+exports/
+*.pdf
+*.csv
+*.xlsx
+
+# scratch / logs
+.scratch/
+npm-debug.log*

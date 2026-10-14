@@ -1,0 +1,30 @@
+                                     Example Co, LLC
+                            BANK-1234, Period Ending 06/30/2026
+                                  RECONCILIATION REPORT
+                                Reconciled on: 10/09/2026
+                           Reconciled by: someone@example.com
+Any changes made to transactions after this date aren't included in this report.
+Summary                                                                     USD
+Statement beginning balance                                              3,000.00
+Checks and payments cleared (2)                                         -2,400.00
+Deposits and other credits cleared (0)                                       0.00
+Statement ending balance                                                   600.00
+Register balance as of 06/30/2026                                          600.00
+Cleared transactions after 06/30/2026                                        0.00
+Uncleared transactions after 06/30/2026                                 10,000.00
+Register balance as of 10/09/2026                                       10,600.00
+Details
+Checks and payments cleared (2)
+DATE        TYPE        REF NO.        PAYEE             AMOUNT (USD)
+06/01/2026  Expense                    Some Bank            -1,900.00
+06/10/2026  Expense                    Other Bank             -500.00
+Total                                                       -2,400.00
+Additional Information
+Uncleared checks and payments after 06/30/2026
+DATE        TYPE        REF NO.        PAYEE             AMOUNT (USD)
+07/01/2026  Expense                                         -1,900.00
+Total                                                       -1,900.00
+Uncleared deposits and other credits after 06/30/2026
+DATE        TYPE        REF NO.        PAYEE             AMOUNT (USD)
+07/03/2026  Transfer                                        40,000.00
+Total                                                       40,000.00
